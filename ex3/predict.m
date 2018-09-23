@@ -8,7 +8,7 @@ m = size(X, 1);
 num_labels = size(Theta2, 1);
 
 % You need to return the following variables correctly 
-p = zeros(size(X, 1), 1);
+p = zeros(m, 1);
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: Complete the following code to make predictions using
@@ -21,15 +21,13 @@ p = zeros(size(X, 1), 1);
 %       can use max(A, [], 2) to obtain the max for each row.
 %
 
+Z1 = [ones(m, 1), X] * Theta1';
+A1 = sigmoid(Z1);
+Z2 = [ones(m, 1), A1] * Theta2';
+A2 = sigmoid(Z2);
 
-
-
-
-
-
-
+[~, p] = max(A2, [], 2);
 
 % =========================================================================
-
 
 end
