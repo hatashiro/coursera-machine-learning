@@ -62,30 +62,27 @@ Theta2_grad = zeros(size(Theta2));
 %               and Theta2_grad from Part 2.
 %
 
+labels = 1:num_labels;
 
+% Cost function for neural network
+for i = 1:m
+    x = [1; X(i, :)'];
+    z2 = Theta1 * x;
+    a2 = [1; sigmoid(z2)];
+    z3 = Theta2 * a2;
+    h = sigmoid(z3);
+    binaryY = labels == y(i);
+    J = J + (-binaryY * log(h) - (1 - binaryY) * log(1 - h)) / m;
+end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% -------------------------------------------------------------
+% Regularization
+Theta1_unbiased = Theta1(:, 2:end);
+Theta2_unbiased = Theta2(:, 2:end);
+J = J + lambda * sum([Theta1_unbiased(:); Theta2_unbiased(:)] .^ 2) / 2 / m;
 
 % =========================================================================
 
 % Unroll gradients
 grad = [Theta1_grad(:) ; Theta2_grad(:)];
-
 
 end
