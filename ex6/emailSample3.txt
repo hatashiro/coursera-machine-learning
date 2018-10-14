@@ -1,0 +1,18 @@
+Hello,
+
+Your certificate (or certificates) for the names listed below will expire in 20 days (on 02 Oct 18 13:35 +0000). Please make sure to renew your certificate before then, or visitors to your website will encounter errors.
+
+We recommend renewing certificates automatically when they have a third of their
+total lifetime left. For Let's Encrypt's current 90-day certificates, that means
+renewing 30 days before expiration. See
+https://letsencrypt.org/docs/integration-guide/ for details.
+
+soramaru.noraesae.net
+
+For any questions or support, please visit https://community.letsencrypt.org/. Unfortunately, we can't provide support by email.
+
+If you are receiving this email in error, unsubscribe at http://mandrillapp.com/track/unsub.php
+
+Regards,
+The Let's Encrypt Team
+

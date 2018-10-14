@@ -129,8 +129,10 @@ pause;
 files = {
     'emailSample1.txt'
     'emailSample2.txt'
+    'emailSample3.txt'
     'spamSample1.txt'
     'spamSample2.txt'
+    'spamSample3.txt'
 };
 
 for i = 1:length(files)
