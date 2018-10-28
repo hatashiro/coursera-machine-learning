@@ -13,3 +13,4 @@ Programming assignments of the Machine Learning course in Coursera
 5. [Regularized Linear Regression and Bias/Variance](ex5)
 6. [Support Vector Machines](ex6)
 7. [K-Means Clustering and PCA](ex7)
+8. [Anomaly Detection and Recommender Systems](ex8)
